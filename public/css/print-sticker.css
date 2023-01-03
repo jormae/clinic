@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+  #print-sticker{
+    font-family: 'Sarabun', sans-serif;
+    line-height: 5px;
+  }
+  .box{
+    display: inline-block;
+/*    margin-top: -20px;
+    margin-bottom: -20px;*/
+  }
+  .row{}
+
+  .box1{ width: 100%; }
+  .box2{ width: 50%; }
+  .box3{ width: 33%; }
+  .box4{ width: 25%; }
+  .box5{ width: 20%; }
+  .box-sticker-a4{ display: inline-block;}
+  .sticker-a4{ width: 5cm; height: 3cm; border: solid 1px #000;}
+  .sticker-a4 p{ text-align: center; }
+  .box-sticker{ display: block;}
+  .sticker{ margin-top: 0px; }
+  .sticker p{ text-align: center; }
+
+  .small{ font-size: 20px; }
+  .smaller{ font-size: 18px; }
+  .title{ font-size: 26px; text-align: center; font-weight: bold; }
+  .hide{ display: none; }
+  .clearfix { overflow: auto; }
+
+  ul li{list-style: none; line-height: 25px}
+  /*ol li{list-style: none; line-height: 50px}*/
+
+  table{ font-family: "THSarabun"; font-size: 22px; border-collapse: collapse; page-break-inside:auto}
+  /*th{ font-weight: normal; border-top: 2pt solid black; border-bottom: 2pt solid black;}*/
+  th{ font-weight: normal; background-color: #c2c2c2; border-top: 1pt solid black;}
+  tr{ border-bottom: 1pt solid black;  page-break-inside:avoid; page-break-after:always }
+
+  button{ display: none; }
+  /*hr{ display: none; }*/
+
+  @page {
+    margin: 30px;
+  }
+
+  @media print {
+
+    thead {display: table-header-group;} 
+    tfoot {display: table-footer-group;}     
+  }

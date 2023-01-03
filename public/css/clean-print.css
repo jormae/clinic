@@ -1,0 +1,60 @@
+  @font-face {
+    font-family: 'THSarabunIT';
+    src:  url('../fonts/THSarabunIT.eot?#iefix') format('embedded-opentype'),  
+          url('../fonts/THSarabunIT.woff') format('woff'), 
+          url('../fonts/THSarabunIT.ttf')  format('truetype'), 
+          url('../fonts/THSarabunIT.svg#THSarabunIT') format('svg');
+          font-weight: normal;
+          font-style: normal;
+  }
+
+  #print-report{
+    font-size: 24px;
+    font-family: "THSarabunIT";
+  }
+  .box{
+    display: inline-block;
+    /*width: 20%;*/
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+
+/*  .box1{ width: 10%; }
+  .box2{ width: 20%; }
+  .box6{ width: 75%; }
+  .box7{ width: 80%; }
+  .box8{ width: 90%; }*/
+  .box1{ width: 100%; }
+  .box2{ width: 50%; }
+  .box3{ width: 30%; }
+  .box4{ width: 25%; }
+  .box5{ width: 20%; }
+/*  .box6{ width: 20%; }
+  .box5{ width: 20%; }
+  .box5{ width: 20%; }
+  .box5{ width: 20%; }
+  .box5{ width: 20%; }
+  .box5{ width: 20%; }*/
+
+  .small{ font-size: 20px; }
+  .smaller{ font-size: 18px; }
+  .title{ font-size: 26px; text-align: center; font-weight: bold; }
+  .hide{ display: none; }
+
+  table{ font-family: "THSarabunIT"; font-size: 22px; border-collapse: collapse; page-break-inside:auto}
+  /*th{ font-weight: normal; border-top: 2pt solid black; border-bottom: 2pt solid black;}*/
+  th{ font-weight: normal; background-color: #c2c2c2; border-top: 1pt solid black;}
+  tr{ border-bottom: 1pt solid black;  page-break-inside:avoid; page-break-after:always }
+
+  button{ display: none; }
+  hr{ display: none; }
+
+  @page {
+    margin: 30px;
+  }
+
+  @media print {
+
+    thead {display: table-header-group;} 
+    tfoot {display: table-footer-group;}     
+  }

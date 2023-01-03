@@ -1,0 +1,35 @@
+  @font-face {
+    font-family: 'THSarabunIT';
+    src:  url('../fonts/THSarabunIT.eot?#iefix') format('embedded-opentype'),  
+          url('../fonts/THSarabunIT.woff') format('woff'), 
+          url('../fonts/THSarabunIT.ttf')  format('truetype'), 
+          url('../fonts/THSarabunIT.svg#THSarabunIT') format('svg');
+          font-weight: normal;
+          font-style: normal;
+  }
+
+  #print-report{
+    font-size: 24px;
+    font-family: "THSarabunIT";
+  }
+
+
+  button{ display: none; }
+  hr{ display: none; }
+
+  @page {
+    margin: 30px;
+  }
+
+  @media print {
+
+    body *{ left: -120px; top: -20px;}
+    #search-report{ visibility: hidden; }
+    .card-header{ visibility: hidden; }
+    .sidebar{ visibility: hidden;}
+    .navbar .navbar-expand-lg .navbar-transparent  .bg-primary  .navbar-absolute{ visibility: hidden; }
+
+    #print-area{ width: 30cm;}
+    .card{ width: 20cm; }
+
+  }

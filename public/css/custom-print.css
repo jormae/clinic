@@ -1,0 +1,199 @@
+
+    @font-face {
+      font-family: 'THSarabunIT';
+      src:  url('../fonts/THSarabunIT.eot?#iefix') format('embedded-opentype'),  
+            url('../fonts/THSarabunIT.woff') format('woff'), 
+            url('../fonts/THSarabunIT.ttf')  format('truetype'), 
+            url('../fonts/THSarabunIT.svg#THSarabunIT') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'THSarabunIT-Bold';
+      src:  url('../fonts/THSarabunIT-Bold.eot?#iefix') format('embedded-opentype'),  
+            url('../fonts/THSarabunIT-Bold.woff') format('woff'), 
+            url('../fonts/THSarabunIT-Bold.ttf')  format('truetype'), 
+            url('../fonts/THSarabunIT-Bold.svg#THSarabunIT-Bold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    #print-report{
+      font-family: "THSarabunIT";
+      font-size: 18pt;
+      line-height: 1.2;
+
+      /*padding: 2cm 2cm 2cm 3cm;*/
+    }
+    /*.table>thead>tr>th {
+      font-size: 18pt;
+      color: #000000;
+    }
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding: 5px 0 5px 0;}*/
+    th{ text-align: center; }
+    .input-report {
+      font-family: "THSarabunIT";
+      font-size: 18pt;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+      /*background-color: #eee;*/
+    }
+    .custom-border>table {
+      border-collapse: collapse;
+    }
+    .custom-border>thead>tr>th{
+      border: 1px solid black;
+    }
+    .custom-border>tbody>tr>td{
+      border: 1px solid black;
+    }
+    
+    #print-report strong{
+      font-family: "THSarabunIT-Bold";
+      font-size: 18pt;
+    }
+    #print-report span{
+      font-family: "THSarabunIT";
+      font-size: 18pt;
+    }
+    #print-report p{
+      text-indent: 2.5cm;
+      text-align: justify;
+      font-family: 'THSarabunIT';
+      font-size: 18pt;
+      /*line-height: 0.8em;*/
+    }
+    #print-report .table{
+      font-size: 18pt;
+      color: #000000;
+    }
+     #print-report ol{
+      padding-left: 140px;
+    }
+     #print-report li{
+      line-height:0.6;
+    }
+
+    h1{
+      font-family: 'THSarabunIT-Bold';
+      font-size: 24.0pt;
+    }
+    #sign{
+      float: right;
+      width: 600px;
+      padding-right: 1cm;
+    }
+    #sign p{
+      text-align: center;
+      line-height: 0.5;
+    }
+    #clear{
+      clear: both;
+    }
+    #show{
+      display: none;
+      display:inline-block; position:absolute; left:700px;
+    }
+    #hide{
+      display:inline-block; position:absolute; left:450px;
+    }
+    .first{
+       /*margin-top: -300px;*/
+    }
+    
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body * {
+          visibility: hidden;
+        }
+      /*@page :left {
+        margin: 10cm;
+        left: -120px;
+        position: fixed;
+      }*/
+        #requestNo{
+          font-family: "THSarabunIT";
+          font-size: 18pt;
+          display: all;
+        }
+        #hide{
+          display: none;
+        }
+        hr{
+          display: none;
+        }
+        #print-report, #print-report * {
+          visibility: visible;
+        }
+        #print-report {
+          /*position: fixed;*/
+          /*position: absolute;*/
+          /*width: 210mm;*/
+          /*height: 297mm;*/
+          /*height: 594mm;*/
+          position: static;
+          /*height:100%;*/
+          /*left: -120px;*/
+          /*left: 3cm;*/
+          margin-left: -200px;
+          /*margin-top: 10px;*/
+          margin-right: 2cm;
+          font-family: "THSarabunIT";
+          font-size: 18pt;
+          z-index: 10 !important;
+          line-height: 1.2;
+          page-break-after: always;
+        }
+        /*.first{
+           margin-top: -600px;
+        }*/
+        li{
+          line-height:0.6;
+        }
+        .input-report {
+          font-family: "THSarabunIT";
+          font-size: 18pt;
+          border-top-style: hidden;
+          border-right-style: hidden;
+          border-left-style: hidden;
+          border-bottom-style: hidden;
+          /*background-color: #eee;*/
+        }
+        #sign{
+          float: right;
+          width: 600px;
+          padding-right: 1cm;
+        }
+        #sign p{
+          text-align: center;
+          line-height: 0.5;
+        }
+        #show{
+          display:inline-block;
+          position: absolute;
+          left:450px;
+        }
+        .card-footer *{
+          display: none !important;
+        }
+
+        #break { 
+          page-break-before: always;
+        }
+        .break { 
+          page-break-before: always;
+        }
+
+        
+
+
+    }

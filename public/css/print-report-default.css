@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+    table{margin: 20px 0 0 0; }
+    /*table { border: solid 1px black }*/
+    td { border: 1px solid black;}
+    .table-noborder{ border: none }
+
+    
+    /*.table>thead>tr>th {
+      font-size: 18pt;
+      color: #000000;
+    }
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding: 5px 0 5px 0;}*/
+    th{ text-align: center; }
+    .input-report {
+      font-family: "Sarabun";
+      font-size: 14px;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+      /*background-color: #eee;*/
+    }
+    .custom-border>table {
+      border-collapse: collapse;
+    }
+    .custom-border>thead>tr>th{
+      border: 1px solid black;
+    }
+    .custom-border>tbody>tr>td{
+      border: 1px solid black;
+    }
+
+    #print-report{
+      font-family: "Sarabun";
+      font-size: 14px;
+      /*line-height: 1;*/
+    }
+
+    #print-report span{
+      font-family: "Sarabun";
+      font-size: 14px;
+    }
+    #print-report p{
+      /*text-indent: 2.5cm;*/
+      text-align: justify;
+      font-family: 'Sarabun';
+      font-size: 14px;
+      line-height: 1.3;
+      margin-bottom: -15px;
+    }
+    #print-report table{
+      font-size: 14px;
+      color: #000000;
+      /*line-height: 1.2;*/
+    }
+     #print-report ol{
+      padding-left: 140px;
+    }
+     #print-report li{
+      line-height:0.6;
+    }
+    .indent{ text-indent: 1cm }
+
+    .box{
+    }
+
+    #box-address p{
+      width: 100%;
+      text-align: right;
+      padding-right: 1cm;
+    }
+
+    #sign{
+      float: right;
+      width: 500px;
+      padding-right: 1cm;
+    }
+    #sign p{
+      text-align: center;
+      line-height: 1;
+    }
+    #clear{
+      clear: both;
+    }
+    #show{
+      display: none;
+      display:inline-block; position:absolute; left:700px;
+    }
+    #hide{
+      display:inline-block; position:absolute; left:450px;
+    }
+    .first{
+       /*margin-top: -300px;*/
+    }
+
+    #header{
+      text-align: center;
+      line-height: 10px;
+    }
+    
+
+    @page {
+      /*size: A4;*/
+      /*margin: 0;*/
+    }
+
+    @media print {
+      body * {
+          visibility: hidden;
+        }
+      /*@page :left {
+        margin: 10cm;
+        left: -120px;
+        position: fixed;
+      }*/
+        #hide{
+          display: none;
+        }
+        hr{
+          display: none;
+        }
+        #print-report, #print-report * {
+          visibility: visible;
+        }
+        #print-report {
+          /*position: fixed;*/
+          /*position: absolute;*/
+          /*width: 210mm;*/
+          /*height: 297mm;*/
+          /*height: 594mm;*/
+          position: static;
+          /*height:100%;*/
+          /*left: -120px;*/
+          /*left: 3cm;*/
+          /*margin-left: -200px;*/
+          /*margin-top: 10px;*/
+          margin: 0.5in 0;
+          font-family: "Sarabun";
+          font-size: 14px;
+          z-index: 10 !important;
+          /*line-height: 1.2;*/
+          page-break-after: always;
+        }
+        /*.first{
+           margin-top: -600px;
+        }*/
+        li{
+          line-height:0.6;
+        }
+        .input-report {
+          font-family: "Sarabun";
+          font-size: 18px;
+          border-top-style: hidden;
+          border-right-style: hidden;
+          border-left-style: hidden;
+          border-bottom-style: hidden;
+          /*background-color: #eee;*/
+        }
+        #sign{
+          float: right;
+          width: 500px;
+          padding-right: 1cm;
+        }
+        #sign p{
+          text-align: center;
+          line-height: 1;
+        }
+        #show{
+          display:inline-block;
+          position: absolute;
+          left:450px;
+        }
+        .card-footer *{
+          display: none !important;
+        }
+
+        #break { 
+          page-break-before: always;
+        }
+        .break { 
+          page-break-before: always;
+        }
+
+        
+
+
+    }

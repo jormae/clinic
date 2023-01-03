@@ -1,0 +1,7 @@
+# Customs ignore
+*.sql
+*.rar
+/docs
+/Software Packages
+/database tables
+*.pdf
