@@ -54,6 +54,12 @@ class Prints extends Controller {
  		elseif($strLabName == "dm"){
  			$data['diag'] = "DM";
  		}
+ 		elseif($strLabName == "anc1"){
+ 			$data['diag'] = "ANC1";
+ 		}
+ 		elseif($strLabName == "anc2"){
+ 			$data['diag'] = "ANC2";
+ 		}
 		$this->view('prints/laborder', $data);
 	}
 

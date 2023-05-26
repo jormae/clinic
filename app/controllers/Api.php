@@ -14,6 +14,18 @@ class Api extends Controller {
 		echo json_encode($res);
 	}
 
+	public function user($cid = null)
+	{
+		header('Access-Control-Allow-Origin: *');  
+		if ($cid) {
+			$res['data'] = $this->model('Person_model')->getPersonInfoByCid($cid);
+		}
+		else{
+			$res['data'] = $this->model('User_model')->getAllUsersInfo();
+		}
+		echo json_encode($res);
+	}
+
 	public function diagnose($vn)
 	{
 		header('Access-Control-Allow-Origin: *');  

@@ -50,6 +50,30 @@
 	      	<li><input type="checkbox" checked="true"> Urine Micro Albumine</li>
 	      	<li><input type="checkbox" checked="true"> Uric Acid</li>
 	    </ul>
+	 	 <?php } elseif ($data['diag'] == "ANC1") { ?>
+	  	<ul>
+	      	<li><input type="checkbox" checked="true"> CBC</li>
+	      	<li><input type="checkbox" checked="true"> OF</li>
+	      	<li><input type="checkbox" checked="true"> DCIP</li>
+	      	<li><input type="checkbox" checked="true"> HBsAg</li>
+	      	<li><input type="checkbox" checked="true"> Anti-HIV</li>
+	      	<li><input type="checkbox" checked="true"> VDRL</li>
+	      	<li><input type="checkbox" checked="true"> Blood Group</li>
+	      	<li><input type="checkbox" checked="true"> Rh</li>
+	      	<li><input type="checkbox"> Hb Typing</li>
+	    </ul>
+	  	<?php } elseif ($data['diag'] == "ANC2") { ?>
+	  	<ul>
+	      	<li><input type="checkbox" checked="true"> CBC</li>
+	      	<li><input type="checkbox"> OF</li>
+	      	<li><input type="checkbox"> DCIP</li>
+	      	<li><input type="checkbox"> HBsAg</li>
+	      	<li><input type="checkbox" checked="true"> Anti-HIV</li>
+	      	<li><input type="checkbox" checked="true"> VDRL</li>
+	      	<li><input type="checkbox"> Blood Group</li>
+	      	<li><input type="checkbox"> Rh</li>
+	      	<li><input type="checkbox"> Hb Typing</li>
+	    </ul>
 	  	<?php } ?>
       </div>
       <div class="box box2" style="float: right;">

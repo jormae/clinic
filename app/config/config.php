@@ -1,7 +1,10 @@
 <?php 
 // SYSTEM SETTINGS
-define('BASEURL', 'http://192.168.2.22/dropbox/systems/bacho/clinic/public');
-define('SESSION_URL', 'http://192.168.2.22/dropbox/systems/bacho/clinic/public/auth');
+
+define('BASEURL', 'http://localhost/dropbox/SYSTEMS/BACHO-STAND-ALONE/CLINIC/public');
+define('SESSION_URL', 'http://localhost/dropbox/SYSTEMS/BACHO-STAND-ALONE/CLINIC/public/auth');
+// define('BASEURL', '/public');
+// define('SESSION_URL', '/public/auth');
 define('SYSTEM_NAME', 'PCC ONLINE SYSTEM');
 // define('LINE_TOKEN', '2PLZ2ujG9rN6eKicnvc3XVjVK6HUnT9bELOQpC4yVmx'); //OFFICIAL GROUP
 define('LINE_TOKEN', 'pRiGbKiGhx7ZAguWwiaqKUWhEjyc6qzQFg6SzEInJg8'); //TEST GROUP

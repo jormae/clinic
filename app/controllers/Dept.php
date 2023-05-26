@@ -39,7 +39,7 @@ class Dept extends Controller {
 	 	$username 	= $_SESSION['username'];
 
 	 	// $date = date('Y-m-d');
-	 	$date = '2020-05-13';
+	 	// $date = '2020-05-13';
 	 	$data['pageTitle'] 	= 'Laboratory Unit :: ห้องปฏิบัติการตรวจวิเคราะห์';
 
 	 	$this->view('templates/header');

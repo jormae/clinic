@@ -33,6 +33,8 @@
         // let form_auth = $("#form-auth").serialize()
         let username = $("#username").val()
         let password = $("#password").val()
+        console.log(username)
+        console.log('<?=BASEURL?>')
     
         $.ajax({
             type:'POST',
@@ -42,6 +44,7 @@
                 password:password
             },
             success:function(data){
+              console.log(data)
                 let res = data
                 if (res.success) {
                     location.replace('<?=BASEURL?>/dashboard')

@@ -3,5 +3,5 @@
 *.rar
 /docs
 /Software Packages
-/database tables
+# /database tables
 *.pdf

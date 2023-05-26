@@ -39,6 +39,8 @@
           <a href="<?=BASEURL?>/prints/stickerlab/<?=$data['labsInfo'][0]['visitno']?>" class="w3-button w3-light-grey"><i class="fa fa-print w3-margin-right"></i>พิมพ์สติ๊กเกอร์</a>
           <a href="<?=BASEURL?>/prints/laborder/ht/<?=$data['labsInfo'][0]['visitno']?>" class="w3-button w3-light-grey"><i class="fa fa-print w3-margin-right"></i>พิมพ์ใบแล็บ HT</a>
           <a href="<?=BASEURL?>/prints/laborder/dm/<?=$data['labsInfo'][0]['visitno']?>" class="w3-button w3-light-grey"><i class="fa fa-print w3-margin-right"></i>พิมพ์ใบแล็บ DM</a>
+          <a href="<?=BASEURL?>/prints/laborder/anc1/<?=$data['labsInfo'][0]['visitno']?>" class="w3-button w3-light-grey"><i class="fa fa-print w3-margin-right"></i>พิมพ์ใบแล็บ ANC ครั้งที่ 1</a>
+          <a href="<?=BASEURL?>/prints/laborder/anc2/<?=$data['labsInfo'][0]['visitno']?>" class="w3-button w3-light-grey"><i class="fa fa-print w3-margin-right"></i>พิมพ์ใบแล็บ ANC ครั้งที่ 2</a>
         </div>
     </div>
   </div>
