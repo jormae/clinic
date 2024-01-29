@@ -47,7 +47,7 @@
               console.log(data)
                 let res = data
                 if (res.success) {
-                    location.replace('<?=BASEURL?>/dashboard')
+                    location.replace('<?=BASEURL?>/dept/lab')
                 }
                 else{
                     console.log("ERR!")

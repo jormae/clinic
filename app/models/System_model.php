@@ -125,7 +125,8 @@ class System_model{
             $father         = empty($value['father'])     ? "-" : $value['father'];
             $mother         = empty($value['mother'])     ? "-" : $value['mother'];
             $mate           = empty($value['mate'])       ? "-" : $value['mate'];
-            $message = $i++.'/'.$length.' - ชื่อ-สกุล: '.$value['prenamelong'].$value['fname'].' '.$value['lname'].' เลขปชช.: '.$value['idcard'].' วันเกิด: '.$thDate->thaiShortDate($value['birth']).' ที่อยู่: '.$value['ADDRESS'].' อาชีพ: '.$occupationName.' กลุ่มเลือด: '.$bloodGroup.' ชื่อบิดา: '.$father.' มารดา: '.$mother.' คู่สมรส: '.$mate;
+            $telephonePerson= empty($value['telephonePerson'])       ? "-" : $value['telephonePerson'];
+            $message = $i++.'/'.$length.' - ชื่อ-สกุล: '.$value['prenamelong'].$value['fname'].' '.$value['lname'].' เลขปชช.: '.$value['idcard'].' วันเกิด: '.$thDate->thaiShortDate($value['birth']).' ที่อยู่: '.$value['ADDRESS'].' โทรศัพท์: '.$value['telephonePerson'].' อาชีพ: '.$occupationName.' กลุ่มเลือด: '.$bloodGroup.' ชื่อบิดา: '.$father.' มารดา: '.$mother.' คู่สมรส: '.$mate;
             $line->lineNotify($message);
             $dataLine = array('datetime'=>$datetime, 'lineText'=>$message, 'idcard'=>$value['idcard'], 'visitdate'=>$value['visitdate'], 'sendBy'=>$username);
             $this->db->insert("tbl_line_log", $dataLine);
