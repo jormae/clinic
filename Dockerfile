@@ -2,11 +2,22 @@
 FROM php:7.1-apache
 # COPY apache2.conf /etc/apache2
 COPY . /var/www/html
+# COPY --from=composer:2.0 /usr/bin/composer /usr/bin/composer
 # Enable mod_rewrite for images with apache
 RUN if command -v a2enmod >/dev/null 2>&1; then \
     a2enmod rewrite headers \
     ;fi
 RUN docker-php-ext-install mysqli pdo pdo_mysql
+# RUN composer install
+# RUN composer require vlucas/phpdotenv
+
+# INSTALL AND UPDATE COMPOSER
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+RUN composer self-update
+
+# INSTALL YOUR DEPENDENCIES
+RUN composer install
+
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN service apache2 restart
 

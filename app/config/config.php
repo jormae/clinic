@@ -23,3 +23,9 @@ define('DB_USER', 'root');
 define('DB_PASS', 'administrator'); //123456
 define('DB_NAME', 'jhcisdb');
 define('PORT', '3306'); //3333
+
+// require __DIR__ ."vendor/autoload.php";
+
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotenv->load();
+

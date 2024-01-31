@@ -5,3 +5,6 @@
 /Software Packages
 # /database tables
 *.pdf
+/vendor
+composer.json
+composer.lock

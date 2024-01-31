@@ -1,5 +1,15 @@
 <?php 
 
+// require __DIR__ ."vendor/autoload.php";
+
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotenv->load();
+// private $db_host = $_ENV["DB_HOST"];
+// private $db_user = $_ENV["DB_USER"];
+// private $db_pass = $_ENV["DB_PASS"];
+// private $db_name = $_ENV["DB_NAME"];
+// private $port 	= $_ENV["PORT"];
+
 class Database
 {
 
