@@ -1,0 +1,18 @@
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for tbl_line_log_copy1
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_line_log_copy1`;
+CREATE TABLE `tbl_line_log_copy1`  (
+  `lineLogId` int(6) NOT NULL AUTO_INCREMENT,
+  `datetime` datetime(0) NULL DEFAULT NULL,
+  `visitdate` date NULL DEFAULT NULL,
+  `idcard` varchar(13) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `lineText` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  `sendBy` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`lineLogId`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1156 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+SET FOREIGN_KEY_CHECKS = 1;
