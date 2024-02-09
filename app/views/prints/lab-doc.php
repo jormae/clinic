@@ -10,7 +10,7 @@
 <body>
     <div id="print-report" style="font-size: 14px;">
       <img src="<?=BASEURL?>/img/garuda1.jpg" height="85" style="margin-top: -30px; margin-left: 260px; position: fixed; ">
-      <p style="float: left; margin-top: 0">ที่ นธ 0732.6/</p>
+      <p style="float: left; margin-top: 0"><?=ORG_DOC_NO?>/</p>
       <div id="box-address" >
         <p><?=ORG_ABBR?></p>
         <p class="addr"><?=ORG_ADDRESS?></p>
