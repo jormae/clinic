@@ -25,4 +25,6 @@
    3.3 พิมพ์คำสั่ง docker-compose up -d เพื่อ build และ run docker container
    3.4 พิมพ์คำสั่ง docker-compose down เพื่อหยุดการทำงานของ docker container
 
-4.ตั้งค่าโปรแกรม Docker Desktop ให้เปิดโดยอัตโนมัติเมื่อเปิดคอมพิวเตอร์ 
+4. เปิดโปรแกรมเว็บบราวเซอร์เช่น google chrome พิมพ์ url => localhost:8080 หรือเครื่องอื่นได้โดยการเรียกผ่านเลขไอพีเครื่องที่ติดตั้งระบบเช่น xxx.xxx.x.xxx:8080
+5. ตั้งค่าโปรแกรม Docker Desktop ให้เปิดโดยอัตโนมัติเมื่อเปิดคอมพิวเตอร์ 
+
