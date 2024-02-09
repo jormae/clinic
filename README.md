@@ -1,7 +1,10 @@
 "# clinic" 
 ขั้นตอนการติดตั้ง
 1.ติดตั้งโปรแกรม Navicat
-   1.1 เพิ่ม field "hn" varchar(6) ในตาราง person
+   1.1 เพิ่ม field "hn" varchar(6) ในตาราง person หรือ คัดลอง script ด้านล่างนี้
+   	ALTER TABLE `jhcisdb`.`person` 
+	ADD COLUMN `hn` varchar(10) NULL AFTER `issend2hisgatewayall`;
+ 
    1.2 copy and paste query เพื่อสร้างตารางเก็บ log รายการส่งวิสิตในไลน์กลุ่มห้องบัตรโรงพยาบาลบาเจาะ
 	CREATE TABLE `tbl_line_log`  (
 	  `lineLogId` int(8) NOT NULL AUTO_INCREMENT,
