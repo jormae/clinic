@@ -26,5 +26,8 @@
    3.4 พิมพ์คำสั่ง docker-compose down เพื่อหยุดการทำงานของ docker container
 
 4. เปิดโปรแกรมเว็บบราวเซอร์เช่น google chrome พิมพ์ url => localhost:8080 หรือเครื่องอื่นได้โดยการเรียกผ่านเลขไอพีเครื่องที่ติดตั้งระบบเช่น xxx.xxx.x.xxx:8080
-5. ตั้งค่าโปรแกรม Docker Desktop ให้เปิดโดยอัตโนมัติเมื่อเปิดคอมพิวเตอร์ 
+5. ตั้งค่าโปรแกรม Docker Desktop ให้เปิดโดยอัตโนมัติเมื่อเปิดคอมพิวเตอร์มีข้ันตอนดังนี้
+   5.1 คัดลอกและวางข้อมูล path ในโปรแกรม explorer
+   C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+   5.2 คัดลอกโปรแกรมและวาง shortcut program ในโฟลเดอร์ StartUp นี้	
 
